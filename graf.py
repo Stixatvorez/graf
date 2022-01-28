@@ -2,7 +2,10 @@ from tkinter import*
 from math import *
 import matplotlib.pyplot as plt
 import numpy as np
-
+from tkinter import messagebox
+def okno(event):
+    if a.get() == "" or b.get() == '' or c.get() == '':
+        messagebox.showinfo('БУЙ БУЙ!',' МАХАЦА БУИШЬ?! ЗАПОЛНИ ВСЕ ПОЛЯ!')
 def mami():    
     flag=""
     D=0
@@ -44,7 +47,7 @@ def kliikut(event):
     aken.geometry(str(aken.winfo_width())+"x"+str(aken.winfo_height()-400))
 
 def graafik():
-    flag,D,t=lol()
+    flag,D,t=mami()
     if flag==True:
         a_=int(a.get())
         b_=int(b.get())
