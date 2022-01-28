@@ -2,10 +2,7 @@ from tkinter import*
 from math import *
 import matplotlib.pyplot as plt
 import numpy as np
-from tkinter import messagebox
-def okno(event):
-    if a.get() == "" or b.get() == '' or c.get() == '':
-        messagebox.showinfo('БУЙ БУЙ!',' МАХАЦА БУИШЬ?! ЗАПОЛНИ ВСЕ ПОЛЯ!')
+
 def mami():    
     flag=""
     D=0
